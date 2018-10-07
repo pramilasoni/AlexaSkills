@@ -1,0 +1,161 @@
+﻿{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "sitecore storefront",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "cease everything"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "how to use this skill",
+                        "give me guidance"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "abort getting habita home feed"
+                    ]
+                },
+                {
+                    "name": "NewProductsIntent",
+                    "slots": [],
+                    "samples": [
+                        "what are todays new releases",
+                        "todays new releases"
+                    ]
+                },
+                {
+                    "name": "TopProductsIntent",
+                    "slots": [
+                        {
+                            "name": "Limit",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "Criteria",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "popular products",
+                        "popular",
+                        "latest products",
+                        "top products",
+                        "top {Limit} {Criteria}",
+                        "get the {Limit} most popular {Criteria}",
+                        "get the {Limit} top {Criteria}"
+                    ]
+                },
+                {
+                    "name": "WhereIsTheOrderIntent",
+                    "slots": [],
+                    "samples": [
+                        "where is my order",
+                        "when will i get my order",
+                        "what is the satus of my order"
+                    ]
+                },
+                {
+                    "name": "ShowMyBasketIntent",
+                    "slots": [],
+                    "samples": [
+                        "show me my cart",
+                        "show me my basket",
+                        "what is in my basket",
+                        "my basket status"
+                    ]
+                },
+                {
+                    "name": "ShowBioIntent",
+                    "slots": [],
+                    "samples": [
+                        "read my bio",
+                        "talk about sumith",
+                        "who made you",
+                        "who is your creator"
+                    ]
+                },
+                {
+                    "name": "PickAWinnerIntent",
+                    "slots": [],
+                    "samples": [
+                        "ready to pick the winner",
+                        "can you pick the winner please",
+                        "select a winner",
+                        "Who won"
+                    ]
+                },
+                {
+                    "name": "AddProductToCartIntent",
+                    "slots": [
+                        {
+                            "name": "product",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "Add {product} to cart",
+                        "Add {product} to my existing basket",
+                        "Add {product} to my existing cart",
+                        "Add this product to cart"
+                    ]
+                },
+                {
+                    "name": "AMAZON.MoreIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateSettingsIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NextIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollRightIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollLeftIntent",
+                  "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollUpIntent",
+                    "samples": []
+                }
+            ],
+            "types": []
+        }
+    }
+}

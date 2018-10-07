@@ -1,0 +1,44 @@
+﻿@model AlexaSkill.Data.CompetitionWinner
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h1>Competition Winner</h1>
+        <h4>Congratulations!!!</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dd>
+                <img src="@Model.ProfileImageUrl" />
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+
+            <dd>
+                <b>@Html.DisplayFor(model => model.Name)</b>
+
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Tweet)
+            </dt>
+
+            <dd>
+                <b>
+                    @Html.DisplayFor(model => model.Tweet)
+                </b>
+            </dd> 
+        </dl>
+    </div> 
+</body>
+</html>

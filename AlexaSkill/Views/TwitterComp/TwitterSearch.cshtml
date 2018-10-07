@@ -1,0 +1,17 @@
+﻿@model AlexaSkill.Models.TwitterSearch
+@{
+    ViewBag.Title = "Twitter Query Results Page";
+}
+
+<div class="jumbotron">
+    <h1>Twitter results for: @Model.Query</h1>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        @foreach (var result in Model.TwitterResult)
+        {
+            @Html.Raw(result.Html)
+        }
+    </div>
+</div>

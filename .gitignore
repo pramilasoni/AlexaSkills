@@ -1,0 +1,13 @@
+/AlexaSkill.Data/obj/
+/AlexaSkill.Data/bin/
+/AlexaSkill/obj/Debug/
+/AlexaSkillsDemoDb/obj/
+/AlexaSkill/bin/
+/AlexaSkill/obj/
+/.vs
+/AlexaSkillsDemoDb/Import Schema Logs/
+/AlexaSkill/Properties/PublishProfiles
+/AlexaSkillsDemoDb/bin/
+/packages/
+/AlexaSkillsDemoDb/AlexaSkillsDemoDb.dbmdl
+/AlexaSkillsDemoDb/AlexaSkillsDemoDb.jfm

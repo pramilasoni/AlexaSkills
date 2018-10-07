@@ -1,0 +1,52 @@
+﻿@model IEnumerable<AlexaSkill.Data.Member>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AlexaUserId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RequestCount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastRequestDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AlexaUserId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RequestCount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastRequestDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedDate)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {item.id}) |
+                @Html.ActionLink("Details", "Details", new {item.id}) |
+                @Html.ActionLink("Delete", "Delete", new {item.id})
+            </td>
+        </tr>
+    }
+
+</table>

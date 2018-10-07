@@ -1,0 +1,32 @@
+﻿@using AlexaSkill.Classes
+<div class="jumbotron">
+    <h1>Amazon Alexa Skills App</h1>
+    <p class="lead">To demonstrate Amazon Alexa Skills.</p>
+    <p>To use the Sitecore storefront skill, you can say, Alexa, ask Sitecore Storefront for top products, to retrieve the top products or say, Alexa, ask Sitecore Storefront for the new products, to retrieve the latest new products. You can also say, Alexa, stop or Alexa, cancel, at any time to exit the Sitecore Storefront skill. For now, do you want to hear the Top products or New products?</p>
+    <p>
+        <a href="/Requests" class="btn btn-primary btn-lg">Requests &raquo;</a>
+    </p>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Members</h2>
+        <p>See All the Members who are using the app</p>
+        <p>
+            <a class="btn btn-default" href="/members">Members &raquo;</a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Manage Products</h2>
+        <p>Product management for demo purposes.</p>
+        <p>
+            <a class="btn btn-default" href="/Products">Products &raquo;</a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Show Tweets</h2>
+        <p>Product management for demo purposes.</p>
+        <p>
+            <a class="btn btn-default" href="@($"/TwitterComp/Twittersearch?query={Url.Encode(TwitterConfiguration.DefaultQuery)}")">Twitter Search &raquo;</a>
+        </p>
+    </div>
+</div>
